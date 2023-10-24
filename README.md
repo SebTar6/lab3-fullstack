@@ -11,13 +11,13 @@ After using this YAML file, you can validate the correctness of the "sidecar-pod
 
 2. To get information about running pods:
 - kubectl get pods -n lab3
-- or:
+3. or:
 - kubectl describe pod sidecar-pod -n lab3
    
 4. Create a portforwarding to access the server:
 - kubectl port-forward -n lab3 sidecar-pod 8080:80
   
-3. Now you can use "curl" to retrieve the contents of the "/var/log/date.log" file:
+5. Now you can use "curl" to retrieve the contents of the "/var/log/date.log" file:
 - curl http://localhost:8080/var/log/date.log
   
 This will retrieve the contents of the "date.log" file from the Nginx server running in the second container in the "sidecar-pod" subdivision.
