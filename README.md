@@ -7,7 +7,7 @@ This YAML file creates the "lab3" namespace, and then defines a "sidecar-pod" po
 After using this YAML file, you can validate the correctness of the "sidecar-pod" pod using portforwarding and the "curl" program. Here's how to do it:
 
 1. Apply the YAML file using:
-- kubectl apply -f lab3-sprawko.yaml command.
+- kubectl apply -f lab3-sprawko.yaml
 
 2. To get information about running pods:
 - kubectl get pods -n lab3
