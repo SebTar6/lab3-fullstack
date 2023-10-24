@@ -11,7 +11,7 @@ After using this YAML file, you can validate the correctness of the "sidecar-pod
 
 2. To get information about running pods:
 - kubectl get pods -n lab3
-  or:
+- or:
 - kubectl describe pod sidecar-pod -n lab3
    
 4. Create a portforwarding to access the server:
